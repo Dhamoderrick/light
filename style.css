@@ -1,0 +1,78 @@
+body {
+  background: #000;
+}
+
+.light {
+  text-align: center;
+  white-space: nowrap;
+  overflow: hidden;
+  position: absolute;
+  z-index: 1;
+  margin: 300px 0 0 0;
+  padding: 0;
+  pointer-events: none;
+  width: 100%;
+}
+.light li {
+  height: 25px;
+  width: 25px;
+  border-radius: 50%;
+  margin: 20px;
+  display: inline-block;
+  background: #00f7a5;
+  box-shadow: 0px 4.6666666667px 24px 3px #00f7a5;
+  
+}
+
+/*                      3th and 5th            */
+
+.light li:nth-child(2n+1) {
+  -webkit-animation: flash linear 1.5s infinite;
+  animation: flash linear 1.5s infinite;
+  background: cyan;
+  box-shadow: 0px 4.6666666667px 24px 3px rgba(0, 255, 255, 0.5);
+ }
+ @-webkit-keyframes flash {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+@keyframes flash {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+
+/*                    2 and 6               */
+.light li:nth-child(4n+2) {
+  background: #f70094;
+  box-shadow: 0px 4.6666666667px 24px 3px #f70094;
+  -webkit-animation: flash-1 linear 3s infinite;
+  animation: flash-1 linear 3s infinite;
+ }
+ @-webkit-keyframes flash-1 {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+@keyframes flash-1 {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+ /*                 1  4  7                */
+.light li:nth-child(3n+1) {
+  -webkit-animation: flash-2 linear 2.5s infinite;
+  animation: flash-2 linear 2.5s infinite;
+}
+ @-webkit-keyframes flash-2 {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+@keyframes flash-2 {
+  0% { opacity: 1; } 
+  50% { opacity: .1; } 
+  100% { opacity: 1; }
+}
+
